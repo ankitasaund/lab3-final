@@ -204,6 +204,7 @@ class ViewController: UIViewController {
             let sound = try AVAudioPlayer(contentsOf: url)
             playSound = sound
             sound.play()
+            sound.numberOfLoops = -1
         } catch {
             // couldn't load file :(
         }
